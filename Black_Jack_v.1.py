@@ -7,7 +7,7 @@ import time
 # меню
 def intro():
     print('''\n
-    For kalling help, press ~H~
+    For calling help, press ~H~
     For starting game, press ~G~
     To buy chips, press ~B~
     ''')
