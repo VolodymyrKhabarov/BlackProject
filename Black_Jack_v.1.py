@@ -98,12 +98,13 @@ while True:
     start = str(input('\nCommand: ').lower())
     if start == 'b':
         player_cash = buy_chips()
-
+    if start == 'h':
+        print("Rules: https://en.wikipedia.org/wiki/Blackjack")
     while start == 'g':
         while True:
             player_bid = int(input('Make your bid: '))
             if player_bid > player_cash:
-                print("У вас нет столько.")
+                print("Not enough money.")
                 continue
             else:
                 break
@@ -123,10 +124,6 @@ while True:
             break
 
         start = str(input('\nNew game: ').lower())
-
-
-
-
 
 
 
