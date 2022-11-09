@@ -14,12 +14,15 @@ def intro():
 
 def buy_chips():
     while True:
-        player_cash = int(input('\nEnter amount: ').lower())
-        if player_cash < 0 or player_cash == 1:
-            print('Buy more than one chip.')
-            continue
-        else:
-            break
+        try:
+            player_cash = int(input('\nEnter amount: ').lower())
+            if player_cash < 0 or player_cash == 1:
+                print('Buy more than one chip.')
+                continue
+            else:
+                break
+        except ValueError:
+            print("That was not a number!")
     return player_cash
 
 
