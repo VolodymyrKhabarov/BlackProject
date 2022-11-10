@@ -16,9 +16,8 @@ def buy_chips():
     while True:
         try:
             player_cash = int(input('\nEnter amount: ').lower())
-            if player_cash < 0 or player_cash == 1:
+            if player_cash <= 1:
                 print('Buy more than one chip.')
-                continue
             else:
                 break
         except ValueError:
