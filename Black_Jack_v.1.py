@@ -84,7 +84,7 @@ def bot_turn():
             bot_l += 0
             break
 
-    return bot_wins
+    return bot_sum_point
 
 
 cards_dict = dict(Two=2, Three=3, Four=4, Five=5, Six=6, Seven=7, Eight=8, Nine=9, Ten=10, Jack=10, Queen=10, King=10,
