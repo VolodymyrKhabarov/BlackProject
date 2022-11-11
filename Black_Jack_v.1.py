@@ -27,6 +27,18 @@ def buy_chips():
 
 # player turn
 def player_turn():
+    """
+    This function creates a "player_cards" list and randomly adds 2 cards to this list by dictionary key cards_dict().
+    Then in card_score the cards are added up by index.
+    Then in player_sum_point add sum of card_score and ask: do you want another card or end?
+    If you want another card and you input "1", this card random add to your player_cards and sum to old card.
+        if sum of cards > 21:
+            you lose
+        if sum of card == 21:
+            you win
+        else you should input "1"
+    :return: sum of card
+    """
     player_cards = []
     for x in range(2):
         player_cards.append(random.choice(list(cards_dict.keys())))
