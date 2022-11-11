@@ -53,6 +53,28 @@ def player_turn():
 
 # bot turn
 def bot_turn():
+    """
+    bot_loose = 0
+    This function is for a bot.
+    This function creates a "bot_cards" list and randomly adds 2 cards to this list by dictionary key cards_dict().
+    Then in card_score the cards are added up by index and create bot_sum_point.
+    Then in bot_sum_point add sum of card_score and print bot_cards and bot_sum_point.
+    While bot_sum_point < 21:
+        new card random add to bot_cards and sum to old card
+        if bot_sum_point > 21:
+            bot lose!
+            bot_loose += 1
+        elif bot_sum_point == 21:
+            bot win!
+        elif bot_sum_point > player_sum_point and bot_sum_point < 21:
+            bot win!
+        elif bot_sum_point < player_sum_point:
+            bot loses!
+            bot_loose += 1
+        elif bot_sum_point > 21  and player_sum_point > 21:
+            bot_loose += 1
+    :return: sum of card
+    """
     bot_l = 0
     bot_cards = []
     bot_cards.append(random.choice(list(cards_dict.keys())))
