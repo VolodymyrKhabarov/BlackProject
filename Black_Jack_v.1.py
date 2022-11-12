@@ -13,6 +13,10 @@ def intro():
     ''')
 
 def buy_chips():
+    """
+    This function is for buying chips. You only need to enter numbers.
+    :return: your number of chips
+    """
     while True:
         try:
             player_cash = int(input('\nEnter amount: '))
